@@ -15,7 +15,7 @@ namespace ProblematicProblem
         {
             
                 Console.Write("Hello, welcome to the random activity generator! \nWould you like to generate a random activity? yes/no: ");
-                bool cont = Console.ReadLine().ToLower() == "yes" ? true : false;
+                bool cont = Console.ReadLine().ToLower() == "yes";
             while (cont)
             {
                 Console.WriteLine();
@@ -31,7 +31,7 @@ namespace ProblematicProblem
                 Console.WriteLine();
 
                 Console.Write("Would you like to see the current list of activities? Sure/No thanks: ");
-                bool seeList = Console.ReadLine().ToLower() == "sure" ? true : false;
+                bool seeList = Console.ReadLine().ToLower() == "sure";
 
                 if (seeList)
                 {
@@ -45,7 +45,7 @@ namespace ProblematicProblem
                     Console.WriteLine();
 
                     Console.Write("Would you like to add any activities before we generate one? yes/no: ");
-                    bool addToList = Console.ReadLine().ToLower() == "yes" ? true : false;
+                    bool addToList = Console.ReadLine().ToLower() == "yes";
 
                     Console.WriteLine();
 
@@ -65,7 +65,7 @@ namespace ProblematicProblem
                         Console.WriteLine();
 
                         Console.WriteLine("Would you like to add more? yes/no: ");
-                        addToList = Console.ReadLine().ToLower() == "yes" ? true : false;
+                        addToList = Console.ReadLine().ToLower() == "yes";
                     }
                 }
 
@@ -113,7 +113,7 @@ namespace ProblematicProblem
                     }
                     Console.Write($"Ah got it! {userName}, your random activity is: {randomActivity}! Is this ok or do you want to grab another activity? Keep/Redo: ");
                     Console.WriteLine();
-                    cont = Console.ReadLine().ToLower() == "redo" ? true : false;
+                    cont = Console.ReadLine().ToLower() == "redo";
                 }
             }
             Console.WriteLine();
