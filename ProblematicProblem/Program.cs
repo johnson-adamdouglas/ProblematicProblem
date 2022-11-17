@@ -13,9 +13,9 @@ namespace ProblematicProblem
 
         static void Main(string[] args)
         {
-            
-                Console.Write("Hello, welcome to the random activity generator! \nWould you like to generate a random activity? yes/no: ");
-                bool cont = Console.ReadLine().ToLower() == "yes";
+
+            Console.Write("Hello, welcome to the random activity generator! \nWould you like to generate a random activity? yes/no: ");
+            bool cont = Console.ReadLine().ToLower() == "yes";
             while (cont)
             {
                 Console.WriteLine();
